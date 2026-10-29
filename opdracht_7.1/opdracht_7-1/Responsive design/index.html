@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive exercise</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      min-height: 100%;
+    }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .navbar {
+      height: 10vh;
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 5%;
+      background-color: #ed4949;
+      color: #fff;
+    }
+
+    .logo {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    .menu-placeholder {
+      display: none;
+      width: 35px;
+      height: 35px;
+      background-color: #fff;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .panel {
+      height: 30vh;
+      min-height: 220px;
+      padding: 25px 4.6%;
+    }
+
+    .panel h2,
+    .panel p {
+      margin: 0;
+    }
+
+    .panel h2 {
+      font-size: 30px;
+    }
+
+    .panel p {
+      font-size: 20px;
+    }
+
+    .panel-one {
+      background-color: #ffcc1e;
+    }
+
+    .panel-two {
+      background-color: #f39427;
+    }
+
+    .panel-three {
+      background-color: #68b44a;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .navbar {
+        justify-content: center;
+        background-color: #ff6480;
+      }
+
+      .panel {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 2.5%;
+        color: #fff;
+      }
+
+      .panel-one {
+        background-color: #ff394e;
+      }
+
+      .panel-two {
+        background-color: #514de9;
+      }
+
+      .panel-three {
+        background-color: #373df4;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .navbar {
+        background-color: #686ade;
+      }
+
+      .menu-placeholder {
+        display: block;
+      }
+
+      .panel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+      }
+
+      .panel-one {
+        background-color: #80d5dc;
+      }
+
+      .panel-two {
+        background-color: #df4cf4;
+      }
+
+      .panel-three {
+        background-color: #303466;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">Logo</h1>
+    <div class="menu-placeholder" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section class="panel panel-one">
+      <h2>Title 2</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa earum numquam nemo mollitia quibusdam hic exercitationem sint excepturi minus ea, repellat, unde rem nostrum tenetur? Error nemo aspernatur esse quis!</p>
+    </section>
+    <section class="panel panel-two">
+      <h2>Title 2</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa earum numquam nemo mollitia quibusdam hic exercitationem sint excepturi minus ea, repellat, unde rem nostrum tenetur? Error nemo aspernatur esse quis!</p>
+    </section>
+    <section class="panel panel-three">
+      <h2>Title 2</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa earum numquam nemo mollitia quibusdam hic exercitationem sint excepturi minus ea, repellat, unde rem nostrum tenetur? Error nemo aspernatur esse quis!</p>
+    </section>
+  </main>
+</body>
+</html>
